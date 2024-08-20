@@ -1,0 +1,83 @@
+{
+  "workspace": {
+    "id": null,
+    "name": "Untitled Workspace",
+    "theme": null,
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Siemens-logo.svg/1024px-Siemens-logo.svg.png",
+    "favicon_url": null,
+    "brand_name": "Document Calibration Demo",
+    "main_color": "#009a9a",
+    "font_color": null,
+    "font_family": "PT Sans",
+    "language": "en"
+  },
+  "kanban": {
+    "access_control": {
+      "is_public": true,
+      "required_roles": []
+    }
+  },
+  "home": {
+    "access_control": {
+      "is_public": true,
+      "required_roles": []
+    }
+  },
+  "jobs": [],
+  "hooks": [],
+  "forms": [
+    {
+      "id": "e88d4635-f03c-4181-9569-fc95ce1888a5",
+      "path": "document-calibration-form",
+      "title": "Document calibration form",
+      "is_initial": true,
+      "auto_start": false,
+      "allow_restart": false,
+      "end_message": null,
+      "start_message": null,
+      "error_message": null,
+      "welcome_title": null,
+      "timeout_message": null,
+      "start_button_text": null,
+      "restart_button_text": null,
+      "file": "document_calibration_form.py",
+      "workflow_position": [
+        -228.0,
+        -12.0
+      ],
+      "transitions": [
+        {
+          "target_id": "8307ccc0-9805-496a-a84d-c4fec26706ed",
+          "target_type": "scripts",
+          "type": "forms:finished",
+          "id": "j5dj84f",
+          "condition_value": null
+        }
+      ],
+      "notification_trigger": {
+        "variable_name": "assignee_emails",
+        "enabled": false
+      },
+      "access_control": {
+        "is_public": true,
+        "required_roles": []
+      }
+    }
+  ],
+  "scripts": [
+    {
+      "id": "8307ccc0-9805-496a-a84d-c4fec26706ed",
+      "file": "save_to_sql.py",
+      "title": "Save to SQL",
+      "is_initial": false,
+      "workflow_position": [
+        144.0,
+        -12.0
+      ],
+      "transitions": []
+    }
+  ],
+  "iterators": [],
+  "conditions": [],
+  "version": "11.0"
+}
